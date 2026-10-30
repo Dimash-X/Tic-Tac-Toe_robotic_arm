@@ -64,8 +64,8 @@ The robotic arm uses a Raspberry Pi and an ESP32-based control system. Python sc
 
 The software is organized into two main directories:
 
-- **[robot_control](raspberry_pi/robot_control/)** – Contains scripts for controlling the robotic arm and its movements.
-- **[tic_tac_toe](raspberry_pi/tic_tac_toe/)** – Contains the game logic and scripts specifically developed for playing Tic-Tac-Toe with the robotic arm.
+- **[robot_control](robot_control/)** – Contains scripts for controlling the robotic arm and its movements.
+- **[tic_tac_toe](tic_tac_toe/)** – Contains the game logic and scripts specifically developed for playing Tic-Tac-Toe with the robotic arm.
 
 Refer to the respective directories for the source code and implementation details.
 ## Future Improvements
@@ -89,5 +89,5 @@ This project is provided for educational and experimental purposes. Anyone build
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](https://github.com/Dimash-X/Robot-Rabbit_robotic_arm/blob/main/LICENSE) file for details.
+This project is licensed under the MIT License. See the [LICENSE](https://github.com/Dimash-X/Tic-Tac-Toe_robotic_arm/blob/main/LICENSE) file for details.
 
