@@ -1,7 +1,7 @@
 # Tic Tac Toe robotic_arm
 A multi-joint robotic arm with a servo-driven gripper, designed for object manipulation and hands-on exploration of robotics, mechanical design, and control systems. This robotic arm also plays Tic-Tac-Toe remarkably well
 
-[**Open Interactive 3D Model**](https://dimash-x.github.io/Tic-Tac-Toe_robotic_arm/)
+# [OPEN INTERACTIVE 3D MODEL](https://dimash-x.github.io/Tic-Tac-Toe_robotic_arm/)
 ## Overview
 
 This project features a multi-joint robotic arm equipped with a servo-driven mechanical gripper, designed to perform object manipulation tasks and demonstrate practical applications of robotics and mechatronics
