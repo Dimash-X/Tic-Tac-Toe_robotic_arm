@@ -58,4 +58,36 @@ Actual costs may vary depending on suppliers, material choices, and component av
 The diagram below illustrates the connection between the Raspberry Pi (or computer), ESP32 servo motor driver, and STS3215 servo motors.
 
 ![Control System Connection](media/control_system_connection.png)
+## Software and Control
+
+The robotic arm uses a Raspberry Pi and an ESP32-based control system. Python scripts run on the Raspberry Pi for high-level control, while the ESP32 servo motor driver handles communication with and control of the STS3215 servo motors.
+
+The software is organized into two main directories:
+
+- **[robot_control](raspberry_pi/robot_control/)** – Contains scripts for controlling the robotic arm and its movements.
+- **[tic_tac_toe](raspberry_pi/tic_tac_toe/)** – Contains the game logic and scripts specifically developed for playing Tic-Tac-Toe with the robotic arm.
+
+Refer to the respective directories for the source code and implementation details.
+## Future Improvements
+
+- Improve the gripper mechanism and object-handling capabilities.
+- Add more detailed assembly photographs and wiring documentation.
+- Expand the control software and communication features.
+- Further develop the robotic arm's ability to play Tic-Tac-Toe.
+
+## Additional Projects
+
+Explore more robotics and 3D-printing projects on my [GitHub profile](https://github.com/Dimash-X).
+
+## Contact
+
+For questions, suggestions, or project improvements, feel free to contact me at [xomidad@gmail.ru](mailto:xomidad@gmail.ru).
+
+## Disclaimer
+
+This project is provided for educational and experimental purposes. Anyone building, modifying, or operating the robot is responsible for ensuring safe mechanical assembly, electrical connections, and operation. The author is not responsible for any damage, injury, or losses resulting from the construction or use of this project.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](https://github.com/Dimash-X/Robot-Rabbit_robotic_arm/blob/main/LICENSE) file for details.
 
