@@ -17,4 +17,19 @@ The project explores robotic manipulation, mechanical design, and control system
 - **Object Manipulation:** Performs physical pick-and-place operations.
 - **Tic-Tac-Toe Gameplay:** Plays Tic-Tac-Toe by physically placing game pieces on the board.
 - **Practical Robotics Application:** Combines mechanical design, actuation, and control systems in an interactive project.
+## CAD Design
+
+The robotic arm was designed and assembled in CAD. The three main assemblies were uploaded to the CAD environment for visualization. Screenshots of each assembly are shown below.
+
+### 1. Base Assembly
+
+![Base Assembly](media/base_assembly.png)
+
+### 2. Arm Body Assembly
+
+![Arm Body Assembly](media/arm_body_assembly.png)
+
+### 3. Gripper Assembly
+
+![Gripper Assembly](media/gripper_assembly.png)
 
