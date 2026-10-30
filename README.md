@@ -37,5 +37,5 @@ The robotic arm was designed and assembled in CAD. The three main assemblies wer
 
 The Bill of Materials (BOM) provides an overview of the components, materials, tools, and hardware required to build the robotic arm.
 
-![Tool Box BOM](media/Tool_Box_BOM.png)
+![Tool Box BOM](bom/Tool_Box_BOM.png)
 
