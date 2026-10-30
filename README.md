@@ -39,3 +39,23 @@ The Bill of Materials (BOM) provides an overview of the components, materials, t
 
 ![Tool Box BOM](bom/Tool_Box_BOM.png)
 
+## Estimated Build Cost
+
+The estimated cost of building the robotic arm is approximately **$180 USD**, including 3D-printed parts, electronic components, hardware, and assembly tools.
+
+Actual costs may vary depending on suppliers, material choices, and component availability.
+
+## Assembly and System Integration
+
+1. Prepare all 3D-printed components, including the base, arm body, gripper, and electronics box.
+2. Prepare the five STS3215 servo motors, ESP32 servo motor driver, bearing, screws, and other hardware.
+3. Assemble the base, arm body, and gripper using the corresponding mechanical components.
+4. Install the servo motors in their designated mounts and connect the mechanical linkages.
+5. Connect the Raspberry Pi (or computer) to the ESP32 servo motor driver via USB-C.
+6. Connect the STS3215 servo motors to the driver using the servo chain configuration.
+7. Configure the control software and test the robotic arm's movements and gripper operation.
+
+The diagram below illustrates the connection between the Raspberry Pi (or computer), ESP32 servo motor driver, and STS3215 servo motors.
+
+![Control System Connection](media/control_system_connection.png)
+
