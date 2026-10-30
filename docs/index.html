@@ -1,1 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1020">
+  <title>Tic-Tac-Toe Robotic Arm | 3D Model</title>
 
+  <script type="module"
+    src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js">
+  </script>
+
+  <style>
+    :root {
+      color-scheme: dark;
+      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #0b1020;
+      color: #eef2ff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background:
+        radial-gradient(ellipse at 50% 0%, rgba(48, 78, 140, .22), transparent 55%),
+        #0b1020;
+    }
+    main {
+      width: min(1100px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 42px 0 28px;
+    }
+    header { margin-bottom: 20px; }
+    .eyebrow {
+      color: #8ea8df;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+    }
+    h1 {
+      margin: 10px 0 8px;
+      font-size: clamp(28px, 5vw, 46px);
+      line-height: 1.08;
+      letter-spacing: -.035em;
+    }
+    .intro {
+      margin: 0;
+      color: #aab5cc;
+      line-height: 1.6;
+    }
+    .viewer-shell {
+      overflow: hidden;
+      border: 1px solid #273451;
+      border-radius: 18px;
+      background: linear-gradient(145deg, #151f35, #0e1729);
+      box-shadow: 0 24px 70px rgba(0, 0, 0, .32);
+    }
+    model-viewer {
+      display: block;
+      width: 100%;
+      height: min(70vh, 680px);
+      min-height: 390px;
+      --poster-color: transparent;
+      background: radial-gradient(ellipse at center, #202d48 0%, #111a2c 72%);
+    }
+    .toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 14px 18px;
+      border-top: 1px solid #273451;
+      color: #aab5cc;
+      font-size: 13px;
+    }
+    button {
+      border: 1px solid #405477;
+      border-radius: 9px;
+      padding: 9px 13px;
+      background: #1b2a46;
+      color: #eef2ff;
+      font: inherit;
+      cursor: pointer;
+    }
+    button:hover { background: #263b60; }
+    .hint { line-height: 1.5; }
+    footer {
+      padding-top: 18px;
+      color: #71809c;
+      font-size: 12px;
+      text-align: center;
+    }
+    @media (max-width: 600px) {
+      main { width: min(100% - 20px, 1100px); padding-top: 28px; }
+      model-viewer { min-height: 340px; height: 58vh; }
+      .toolbar { align-items: flex-start; }
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <header>
+      <div class="eyebrow">Robotics · Mechanical Design · 3D CAD</div>
+      <h1>Tic-Tac-Toe Robotic Arm</h1>
+      <p class="intro">Interactive 3D model. Drag to rotate and scroll or pinch to zoom.</p>
+    </header>
+
+    <section class="viewer-shell" aria-label="Interactive 3D model viewer">
+      <model-viewer
+        id="robotModel"
+        src="./models/Tic-Tac-Toe_robotic_arm.glb"
+        alt="3D model of the Tic-Tac-Toe robotic arm"
+        camera-controls
+        auto-rotate
+        auto-rotate-delay="1200"
+        rotation-per-second="18deg"
+        shadow-intensity="1"
+        exposure="1"
+        environment-image="neutral"
+        interaction-prompt="auto"
+        loading="eager">
+        <div slot="progress-bar"></div>
+      </model-viewer>
+
+      <div class="toolbar">
+        <span class="hint">Drag to rotate · Scroll/pinch to zoom · Two-finger drag to pan</span>
+        <button type="button" id="resetView">Reset view</button>
+      </div>
+    </section>
+
+    <footer>3D model preview · Tic-Tac-Toe Robotic Arm</footer>
+  </main>
+
+  <script>
+    const viewer = document.querySelector("#robotModel");
+    document.querySelector("#resetView").addEventListener("click", () => {
+      viewer.cameraOrbit = "auto auto auto";
+      viewer.cameraTarget = "auto auto auto";
+      viewer.fieldOfView = "auto";
+      viewer.autoRotate = true;
+    });
+  </script>
+</body>
+</html>
